@@ -107,11 +107,22 @@ button:focus{
 .matches .match_content{
     width: 100%;
     object-fit: contain;
-    max-height: 100px;
+    max-height: auto;
     margin-right: 10px;
     transition: transform 500ms;
-    background-color: #fff;
-    color: #222;
+}
+.matches .match_content .card{
+    width: 325px;
+    height: auto;
+    color: var(--dark-color);
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.matches .match_content .card img{
+    border: none;
+    border-radius: 10px;
 }
 
 /* Mobie footer navbar */
