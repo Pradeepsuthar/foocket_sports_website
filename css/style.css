@@ -52,7 +52,7 @@ button:focus{
 
 .banner_section .booking_btn{
     position: relative;
-    top: 300px;
+    top: 350px;
     left: 40px;
     padding: 10px 20px;
     border-radius: 24px;
@@ -111,7 +111,7 @@ button:focus{
     margin-right: 10px;
     transition: transform 500ms;
 }
-.matches .match_content .card{
+.matches .match_content .match_card{
     width: 325px;
     height: auto;
     color: var(--dark-color);
@@ -120,18 +120,27 @@ button:focus{
     background-color: transparent;
 }
 
-.matches .match_content .card img{
+.matches .match_content .match_card img{
     border: none;
     border-radius: 10px;
 }
+
+.social_media_section{
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+    position: relative;
+    bottom: -90px;
+}
+
 
 /* Mobie footer navbar */
 .tab_menu_footer{
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
     border-top: 1px solid var(--light-color);
     color: var(--primary-color); /* icon color */
+    margin-bottom: -3px;
 }
 .tab_menu_footer .tab_item{
     font-size: 25px;
@@ -146,3 +155,21 @@ svg {
     font-size: 15px;
 }
 
+/* Media queries */
+@media(max-width:320px){
+    .body_section .about_section_content h5{
+        font-size: 20px;
+    }
+    .body_section .about_section_content p{
+        font-size: 13px;
+    }
+    .body_section .about_section_content .more_btn{
+        font-size: 12px;
+    }
+    .matches .match_content{
+        margin-right: 60px;
+    }
+    .social_media_section{
+        bottom: -20px;
+    }
+}
