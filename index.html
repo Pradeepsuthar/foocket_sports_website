@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,37 +13,158 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Foocket Sports</title>
-  </head>
-  <body>
-    <!-- Mobile Navbar -->
-    <nav class="navbar fixed-top">
-        <span class="navbar_logo">FOOCKET</span>
-    </nav>
+</head>
 
-
-    <!-- App content Body  -->
-    <section class="banner_section">
-
-        <button class="booking_btn">BOOK NOW</button>
-
-    </section>
-
-    <section class="body_section jumbotron jumbotron-fluid my-0 bg-transparent">
-        <div class="about_section_content container">
-            <div class="text-center">
-                <h5>This is a heading</h5><hr class="bg-white">
+<body>
+    <!-- Start Desktop view -->
+    <div class="d-none d-md-block">
+        <nav class="desktop-nav">
+            <div class="d-brand-logo">
+                <img src="images/foocket-logo.png">
             </div>
-            <p class="text-justify">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <div class="text-center py-4">
-                <button class="more_btn">MORE</button>
+            <div class="d-nav-link">
+                <a href="#">About Us</a>
+                <a href="#">Pay & Play</a>
+                <a href="#">Gallery</a>
+                <a href="#">Membership</a>
+                <a href="#">Partnership</a>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <div class="jumbotron jumbotron-fluid d-banner my-0">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
             </div>
         </div>
-    </section>
+        <!-- Toolbar -->
+        <div class="d-toolbar pt-4 pb-3 sticky-top">
+            <div class="toolbar-heading">
+                <span><b>BOOK A SLOT</b></span>
+            </div>
+            <div class="toolbar-option">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg> Select City
+                    </a>
 
-    <section class="body_section jumbotron jumbotron-fluid my-0 bg-transparent">
-        <div class="matches container pt-5 mt-5">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Mumbai</a>
+                        <a class="dropdown-item" href="#">Delhi</a>
+                        <a class="dropdown-item" href="#">Jaipur</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matches -->
+        <div class="jumbotron jumbotron-fluid d-matches">
+            <div class="container text-center">
+                <h1><b>Matches</b></h1>
+            </div>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+                    <div class="col">
+                        <div class="card d-match_card">
+                            <div class="text-center">
+                                <img src="images/cricket_PNG96.png" style="
+                                width: 90px;
+                                height: 100px;
+                                position: absolute;
+                                top: -52px;
+                                right: 30px;
+                            ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cricket Match</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">20 Aug 2020</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Book Now</a>
+                                <a href="#" class="card-link">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card d-match_card">
+                            <div class="text-center">
+                                <img src="images/fifa_game_PNG47.png" style="
+                                width: 90px;
+                                height: 100px;
+                                position: absolute;
+                                top: -52px;
+                                right: 30px;
+                            ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Football Match</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">20 Aug 2020</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Book Now</a>
+                                <a href="#" class="card-link">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Desktop view -->
+
+
+    <!-- End Mobile App View -->
+    <div class="d-block d-md-none">
+
+        <!-- Mobile Navbar -->
+        <nav class="navbar fixed-top">
+            <span class="navbar_logo">FOOCKET</span>
+        </nav>
+
+
+        <!-- App content Body  -->
+        <section class="banner_section">
+
+            <button class="booking_btn">BOOK NOW</button>
+
+        </section>
+
+        <section class="body_section jumbotron jumbotron-fluid my-0 bg-transparent">
+            <div class="about_section_content container">
+                <div class="text-center">
+                    <h5>This is a heading</h5>
+                    <hr class="bg-white">
+                </div>
+                <p class="text-justify">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <div class="text-center py-4">
+                    <button class="more_btn">MORE</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="body_section jumbotron jumbotron-fluid my-0 bg-transparent">
+            <!-- <div class="matches container pt-5 mt-5">
             <div class="match_content">
                 <div class="card match_card">
                     <img src="images/World-Cup-Banner-5-696x365.jpg" class="img-fluid">
@@ -53,56 +175,117 @@
                     <img src="images/champions-league-poster-template-bbd92118a38acc6d6b11e1a0e42bf17d_screen.jpg" class="img-fluid">
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="container">
-            <div class="card px-3 py-4 border-0 shadow-sm text-white social_media_section">
-                <h5>Social Links</h5><br>
-                <div class="row row-cols-4">
-
+        <!-- Matches -->
+        <div class="jumbotron jumbotron-fluid d-matches">
+            <div class="container text-center">
+                <h1><b>Matches</b></h1>
+            </div>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
                     <div class="col">
-                        <img src="images/Facebook.png" width="40" height="40">
+                        <div class="card d-match_card">
+                            <div class="text-center">
+                                <img src="images/cricket_PNG96.png" style="
+                                width: 90px;
+                                height: 100px;
+                                position: absolute;
+                                top: -52px;
+                                right: 30px;
+                            ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cricket Match</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">20 Aug 2020</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Book Now</a>
+                                <a href="#" class="card-link">View More</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="images/instagram.png" width="40" height="40">
+                        <div class="card d-match_card">
+                            <div class="text-center">
+                                <img src="images/fifa_game_PNG47.png" style="
+                                width: 90px;
+                                height: 100px;
+                                position: absolute;
+                                top: -52px;
+                                right: 30px;
+                            ">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Football Match</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">20 Aug 2020</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="card-link">Book Now</a>
+                                <a href="#" class="card-link">View More</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <img src="images/linkedin.webp" width="40" height="40">
-                    </div>
-                    <div class="col">
-                        <img src="images/youtube.png" width="50" height="40">
-                    </div>
-                    
                 </div>
             </div>
         </div>
-    </section>
+
+            <div class="container">
+                <div class="card px-3 py-4 border-0 shadow-sm text-white social_media_section">
+                    <h5>Social Links</h5><br>
+                    <div class="row row-cols-4">
+
+                        <div class="col">
+                            <img src="images/Facebook.png" width="40" height="40">
+                        </div>
+                        <div class="col">
+                            <img src="images/instagram.png" width="40" height="40">
+                        </div>
+                        <div class="col">
+                            <img src="images/linkedin.webp" width="40" height="40">
+                        </div>
+                        <div class="col">
+                            <img src="images/youtube.png" width="50" height="40">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- Mobie footer navbar -->
-    <footer class="tab_menu_footer py-2 fixed-bottom">
-        <span class="tab_item">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-              </svg>
-              <small>Home</small>
-        </span>
-        <span class="tab_item">
-            <img src="images/whatsapp_icon.png" width="40px" height="40px">
-        </span>
-        <span class="tab_item">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-              </svg>
-              <small>Player</small>
-        </span>
-    </footer>
+        <!-- Mobie footer navbar -->
+        <footer class="tab_menu_footer py-2 fixed-bottom">
+            <span class="tab_item">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    <path fill-rule="evenodd"
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                </svg>
+                <small>Home</small>
+            </span>
+            <span class="tab_item">
+                <img src="images/whatsapp_icon.png" width="40px" height="40px">
+            </span>
+            <span class="tab_item">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                </svg>
+                <small>Player</small>
+            </span>
+        </footer>
+    </div>
+    <!-- End Mobile App View -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
