@@ -276,3 +276,8 @@ svg {
 }
 
 /* End Desktop view */
+
+.card{
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000 !important;
+    background-color: #222 !important;
+}
